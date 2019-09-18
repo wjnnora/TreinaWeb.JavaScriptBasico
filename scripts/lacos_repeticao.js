@@ -14,20 +14,38 @@
 
 //Desafio do Triângulo
 
-var caracteres = '';
-var controle = 0;
-var interno = 24;
+// var caracteres = '';
+// var controle = 0;
+// var interno = 24;
 
-while (controle < 50) {
-    if (controle < 25) {
-        caracteres += '*';
-        console.log(caracteres);
-    }
-    else{
-        caracteres = caracteres.substr(0, interno);
-        interno--;
-        console.log(caracteres);
-    }
-    controle++;
+// while (controle < 50) {
+//     if (controle < 25) {
+//         caracteres += '*';
+//         console.log(caracteres);
+//     }
+//     else{
+//         caracteres = caracteres.substr(0, interno);
+//         interno--;
+//         console.log(caracteres);
+//     }
+//     controle++;
 
+// }
+
+//Trabalhando com "for in" e "for of"
+
+var array = ['a', 'b', 'c', 'd', 'e']
+
+for(let a of array){
+    console.log(a)
+}
+
+var myObj = {
+    nome: 'Wellington',
+    sobrenome: 'Nora',
+    idade: 24
+}
+
+for(let prop in myObj){
+    console.log(myObj[prop]);
 }
