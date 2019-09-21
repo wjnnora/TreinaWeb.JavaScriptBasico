@@ -18,3 +18,14 @@ console.log (outro.trimRight());
 
 //Remove os espaços dos dois lados
 console.log
+
+//Repetindo string
+//OBS: O acento grave permite a sintaxe abaixo
+var nome = 'Wellington';
+console.log(`Meu nome é ${nome} `.repeat(2));
+
+//Trabalhando com regex
+var data = 'Meu nome é Wellington e nasci dia 28/09/1994';
+var minhaRegex = /\d{2}\/\d{2}\/\d{4}/
+var result = data.match(minhaRegex);
+
