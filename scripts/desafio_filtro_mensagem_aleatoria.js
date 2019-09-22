@@ -1,13 +1,13 @@
 function MinhaFuncao(minhaString) {
-    var stringVerificao = 'abcdefghijklmnopqrstuvxzywz'.split('').is;
-    var naoContem = '';
-    var arrayStringVerificao = minhaString.split('');
-    for (var index = 0; index < stringVerificao.length; index++) {
-        for(var i = 0; i < arrayStringVerificao.length; i++){
-            if(stringVerificao[index] != arrayStringVerificao[i]){
-
-            }
+    var alfabeto = 'abcdefghijklmnopqrstuvxzywz'.split('');
+    console.log(alfabeto);
+    var letrasFaltantes = '';    
+    
+    for (var j = 0; j < alfabeto.length; j++) {
+        if(minhaString.indexOf(alfabeto[j]) === -1){
+            letrasFaltantes += alfabeto[j];
         }
     }
-    console.log(Regex);
+    console.log('Letras faltantes: ' + letrasFaltantes.split(''));
+    console.log('Quantidade de letras faltantes: ' + letrasFaltantes.length);
 }
