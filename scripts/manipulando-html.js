@@ -27,7 +27,7 @@ var teste = document.querySelector('#item-1').outerHTML
 console.log(teste);
 
 //Removendo elementos
-document.querySelector('input').remove();
+//document.querySelector('input').remove();
 document.querySelector('#item-1').remove();
 
 //Criando um novo elemento
@@ -47,7 +47,22 @@ document.querySelector('.list-item').insertAdjacentHTML('afterend', myLi1.outerH
 var firstLi = document.createElement('li');
 firstLi.textContent = 'primeiro elemento';
 var ul = document.querySelector('ul')
-ul.insertBefore(firstLi, ul.querySelector('ul').firstChild)
-document.querySelector('ul').insertBefore(firstLi, document.querySelector('ul').firstChild)
+
+//Pegar um elemento pai
+var ul = document.querySelector('ul');
+//Pegar um filho do pai
+var li = ul.children[2];
+//Descobrir quem é o pai do filho
+console.log(li.parentElement);
+//Pegar o próximo filho, o irmão
+console.log(li.nextElementSibling);
+//Pegar o filho anterior
+console.log(li.previousElementSibling)
+
+//pegando o valor de um input
+var valor = document.querySelector('input').value
+//Inserir um valor no input
+document.querySelector('input').value = 'texto'
+
 
 
